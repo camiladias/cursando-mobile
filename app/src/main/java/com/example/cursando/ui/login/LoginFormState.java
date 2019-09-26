@@ -3,7 +3,7 @@ package com.example.cursando.ui.login;
 import android.support.annotation.Nullable;
 
 /**
- * Data validation state of the login form.
+ * armazena o estado de validação de dados do formulário de login, ou seja se o email ou senha está invalido
  */
 class LoginFormState {
     @Nullable

@@ -3,8 +3,8 @@ package com.example.cursando.data;
 import com.example.cursando.data.model.LoggedInUser;
 
 /**
- * Class that requests authentication and user information from the remote data source and
- * maintains an in-memory cache of login status and user credentials information.
+ * Classe que solicita informações de autenticação e usuário
+ * seta o usuário na seção e invoca o método login da classe data source
  */
 public class LoginRepository {
 

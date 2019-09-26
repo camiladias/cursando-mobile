@@ -1,11 +1,12 @@
 package  com.example.cursando.ui.login;
 
 /**
- * Class exposing authenticated user details to the UI.
+ * Classe que contém as informaçoes do usuário autenticado e
+ * disponibiliza detalhes do usuário à interface do usuário.
  */
 class LoggedInUserView {
     private String displayName;
-    //... other data fields that may be accessible to the UI
+
 
     LoggedInUserView(String displayName) {
         this.displayName = displayName;

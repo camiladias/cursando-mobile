@@ -21,6 +21,12 @@ import android.widget.Toast;
 
 import com.example.cursando.R;
 
+/**
+ * classe principal mais importante, primeira classe q será executada.
+ * Observa as alterações nos campos de senha e login, e delega para as outras classes validarem os
+ * dados Login activity tem o listener
+ *
+ * */
 public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
@@ -41,7 +47,9 @@ public class LoginActivity extends AppCompatActivity {
         final EditText passwordEditText = findViewById(R.id.password);
         final Button loginButton = findViewById(R.id.login);
         final ProgressBar loadingProgressBar = findViewById(R.id.loading);
-
+/**
+ * Observer escuta os estados do login form state, assim q apresenta na interface quando tem algo invalido
+ * */
         loginViewModel.getLoginFormState().observe(this, new Observer<LoginFormState>() {
             @Override
             public void onChanged(@Nullable LoginFormState loginFormState) {

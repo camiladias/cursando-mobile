@@ -9,7 +9,10 @@ import java.io.IOException;
 import retrofit2.Response;
 
 /**
- * Class that handles authentication w/ login credentials and retrieves user information.
+ * Classe que lida com autenticação com credenciais de logon e recupera informações do usuário.
+ * Recebe um user name e e-mail do login repository passa para o retrofit fazer a requisição
+ * http para autenticar o aluno na api rest, com as resposta se 200 sucesso retorna usuário logado para
+ * o repository caso contrário retorna resultado de erro chama retrofit
  */
 public class LoginDataSource {
 

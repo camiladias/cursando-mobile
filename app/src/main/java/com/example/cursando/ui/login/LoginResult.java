@@ -3,7 +3,7 @@ package  com.example.cursando.ui.login;
 import android.support.annotation.Nullable;
 
 /**
- * Authentication result : success (user details) or error message.
+ * Armazena o resultado da autenticação: sucesso (detalhes do usuário) ou mensagem de erro.
  */
 class LoginResult {
     @Nullable

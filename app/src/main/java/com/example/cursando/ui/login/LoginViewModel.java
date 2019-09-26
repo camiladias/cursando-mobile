@@ -10,9 +10,15 @@ import com.example.cursando.data.LoginRepository;
 import com.example.cursando.data.Result;
 import com.example.cursando.data.model.LoggedInUser;
 import com.example.cursando.R;
+/**
+ * responsável por validar o e-mail e a senha recebe login da login activity propaga para login repository,
+ * espera resposta do login repository, depois da resposta define se o usuario está logado ou não
+ * */
 
 public class LoginViewModel extends ViewModel {
-
+/**
+ * o mutable torna a entidade ‘observável’
+ * */
     private MutableLiveData<LoginFormState> loginFormState = new MutableLiveData<>();
     private MutableLiveData<LoginResult> loginResult = new MutableLiveData<>();
     private LoginRepository loginRepository;
